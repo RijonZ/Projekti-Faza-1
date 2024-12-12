@@ -465,6 +465,103 @@ button:hover {
     animation: slideDown 0.3s ease-out;
 }
 
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Queries per Meshkujt, Femijet, Femrat */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1020px) {
+    .Content {
+        width: 90%; 
+        margin: 10px auto; 
+    }
+    img {
+        height: auto; 
+    }
+    h3 {
+        font-size: 24px; 
+    }
+    h4 {
+        font-size: 18px; 
+    }
+    .star {
+        font-size: 30px; 
+    }
+    button {
+        width: 80%; 
+        font-size: 14px; 
+    }
+    .shporta {
+        font-size: 20px; 
+        margin: 10px 0; 
+    }
+
+    .Content .buy1, .Content .shporta {
+        margin: 10px 0; 
+        width: 100%;
+        max-width: 300px; 
+    }
+
+    .Content .star {
+        margin-bottom: 10px; 
+    }
+
+    .Content {
+        flex-direction: column; 
+    }
+}
+
+
+@media screen and (min-width: 490px) and (max-width: 785px) {
+    .Content {
+        width: 45%;
+        margin: 10px;
+    }
+    .Gallery {
+        justify-content: space-between; 
+    }
+}
+
+
+@media screen and (min-width: 786px) {
+    .Content {
+        width: 22%; 
+        margin: 15px;
+    }
+}
+
+@media (min-width: 821px){
+    .Content {
+        flex-direction: column; 
+    }
+
+    .Content .star {
+        margin-bottom: 10px;
+    }
+
+    .Content .buy1, .Content .shporta {
+        margin: 10px 0; 
+        width: 100%; 
+        max-width: 200px; 
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    h3 {
+        font-size: 20px; 
+    }
+    h4 {
+        font-size: 16px; 
+    }
+    .star {
+        font-size: 24px; 
+    }
+    button {
+        font-size: 12px; 
+    }
+}
+
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Contact Us */
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

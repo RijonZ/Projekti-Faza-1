@@ -685,3 +685,86 @@ textarea::-webkit-scrollbar-thumb{
 .container-contact form #button:hover{
     opacity:0.7;
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Queries per Contact Us */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1024px) {
+    .container-contact {
+        padding: 20px;
+    }
+
+    .container-contact form {
+        width: 90%;
+        height: auto;
+    }
+
+    .container-contact input, 
+    .container-contact form textarea {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .container-contact form h4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-contact form #button {
+        margin: 20px auto 0;
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-contact {
+        position: static;
+        padding-bottom: 20px;
+    }
+
+    .container-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-contact form {
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .container-contact form h1 {
+        font-size: 20px;
+    }
+
+    .container-contact input, 
+    .container-contact form textarea {
+        width: 90%;
+    }
+
+    .container-contact form h4 {
+        font-size: 16px;
+    }
+
+    .container-contact form #button {
+        width: 80%;
+        margin: 20px auto 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-contact {
+        font-size: 16px;
+    }
+
+    .container-contact form h1 {
+        font-size: 18px;
+    }
+
+    .container-contact input, 
+    .container-contact form textarea,
+    .container-contact form #button {
+        width: 100%;
+    }
+}

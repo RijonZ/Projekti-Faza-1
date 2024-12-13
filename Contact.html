@@ -34,10 +34,9 @@
                 <a href="Cart.html" class="cart-link">
                     <img src="cart-icon-16.png" alt="photo" width="40px" height="40px">
                 </a>
-            </div>                
+            </div>                    
         </div>
     </div>
-
 
     <div class="spacing"></div>
 
@@ -49,19 +48,19 @@
             <h1>Contact us</h1>
             <div class="input-control">
                 <input id="name" placeholder="Name">
-                
+                <div style="color:red" class="error"></div>
             </div>
             <div class="input-control">
                 <input id="surname" placeholder="Surname">
-                
+                <div style="color:red" class="error"></div>
             </div>
             <div class="input-control">
                 <input id="email" placeholder="Email">
-                
+                <div style="color:red" class="error"></div>
             </div>
             <div class="input-control">
                 <input id="phone" placeholder="Phone">
-                
+                <div style="color:red" class="error"></div>
             </div>
             <h4>Type your message below:</h4>
             <textarea></textarea>
@@ -186,6 +185,95 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+        const form = document.getElementById('form');
+        const name = document.getElementById('name');
+        const surname = document.getElementById('surname');
+        const email = document.getElementById('email');
+        const phone = document.getElementById('phone');
+
+        form.addEventListener('submit', e => {
+        e.preventDefault();
+
+        if (validateInputs()) {
+        form.submit();
+        }
+        });
+
+        const setError = (element, message) => {
+            const inputControl = element.parentElement;
+            const errorDisplay = inputControl.querySelector('.error');
+
+            errorDisplay.innerText = message;
+            inputControl.classList.add('error');
+            inputControl.classList.remove('success')
+        }
+
+        const setSuccess = element => {
+            const inputControl = element.parentElement;
+            const errorDisplay = inputControl.querySelector('.error');
+
+            errorDisplay.innerText = '';
+            inputControl.classList.add('success');
+            inputControl.classList.remove('error');
+        };
+
+        const isValidEmail = email => {
+            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        const validateInputs = () => {
+            const nameValue = name.value.trim();
+            const surnameValue = surname.value.trim();
+            const emailValue = email.value.trim();
+            const phoneValue = phone.value.trim();
+            let isValid = true;
+
+            if(nameValue === '') {
+                setError(name, 'Name is required');
+                isValid = false;
+            } else {
+                setSuccess(name);
+            }
+
+            if(surnameValue === '') {
+                setError(surname, 'Surname is required');
+                isValid = false;
+            } else {
+                setSuccess(surname);
+            }
+
+            if(emailValue === '') {
+                setError(email, 'Email is required');
+                isValid = false;
+            } else if (!isValidEmail(emailValue)) {
+                setError(email, 'Provide a valid email address');
+                isValid = false;
+            } else {
+                setSuccess(email);
+            }
+
+            if(phoneValue === ''){
+                setError(phone, 'Phone is required');
+                isValid = false;
+            } 
+            else if (!/^\d+$/.test(phoneValue)) {
+                setError(phone, 'Phone number must contain only digits');
+                isValid = false;
+            }
+            else if(phoneValue.length < 9){
+                setError(phone, 'Please enter a 9-digit phone number');
+                sValid = false;
+            } 
+            else {
+                setSuccess(phone);
+            }
+            return isValid;
+        }    
+    </script>
+
     
 </body>
 </html>

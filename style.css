@@ -1093,3 +1093,116 @@ input:focus {
     animation: slideDown 0.3s ease-out;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* SignUp Page */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.wrapper {
+    font-family:sans-serif;
+    width:330px;
+    padding:2rem 1rem;
+    margin:50px auto;
+    background-color:white;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 20px 35px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color:black;
+    margin-bottom:1.2rem;
+    width:95%;
+}
+
+form input {
+    width:92%;
+    outline:none;
+    border:1px solid black;
+    padding:12px 20px;
+    margin-bottom:10px;
+    border-radius:20px;
+    background-color:white;
+}
+
+
+.wrapper .signup-btn {
+    width: 90%;
+    padding: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    color:white;
+    cursor:pointer;
+    background:rgb(17, 107, 143);
+}
+
+.wrapper .signup-btn:hover {
+    background-color:rgba(17,107,143,0.877);
+}
+
+input:focus {
+    border:1px solid rgb(192,192,192);
+}
+
+.terms {
+    margin-top:0.5rem;
+}
+
+.terms input {
+    height:1em;
+    width:1em;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+.terms label {
+    font-size:0.7rem;
+
+}
+
+.terms a {
+    color:rgb(17,107,143);
+    text-decoration:none;
+}
+
+.member {
+    margin-top:1.4rem;
+    font-size:0.8rem;
+    color:#636363;
+}
+
+.member a {
+    text-decoration:none;
+    color:rgb(17,107,143);
+}
+
+button a {
+    text-decoration:none;
+    color:white;
+}
+
+.spacing-4{
+    height: 182px;
+}
+
+.spacing-5{
+    height: 50px;
+}
+
+@keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.wrapper{
+    animation: slideDown 0.3s ease-out;
+}

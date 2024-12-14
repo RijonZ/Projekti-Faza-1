@@ -1537,3 +1537,44 @@ button a {
 .img-wrapper .arrow-card:last-child{
     right: -28px;
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Queries per Services */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 1024px) {
+    .img-wrapper .carouse1 {
+        grid-auto-columns: calc(50% - 8px); 
+        gap: 8px;
+    }
+
+    .card-swiper .img img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 520px) {
+    .img-wrapper .carouse1 {
+        grid-auto-columns: 100%; 
+        gap: 6px;
+    }
+
+    .card-swiper .img img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .card-swiper .title-card {
+        font-size: 1rem;
+    }
+
+    .card-swiper .description-card {
+        font-size: 1rem; 
+        text-align: center;
+    }
+
+    .img-wrapper .arrow-card {
+        height: 16px;
+        width: 16px;
+    }
+}

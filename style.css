@@ -1303,3 +1303,137 @@ button a {
 .wrapper{
     animation: slideDown 0.3s ease-out;
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Feedback */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.feedback-con{
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.feedback-container {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.feedback-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.feedback-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.feedback-container input,
+.feedback-container textarea,
+.feedback-container .feedback-btn {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.feedback-container textarea {
+    resize: none;
+    height: 100px;
+}
+
+.feedback-container .feedback-btn {
+    margin: 0 auto;
+    display: block; 
+    text-align: center; 
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-container button:hover {
+    background-color: #0056b3;
+}
+
+.feedback-container p {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+#rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+#rating input {
+    display: none;
+}
+
+#rating label {
+    font-size: 32px;
+    color: gray;
+    cursor: pointer;
+}
+
+#rating input:checked ~ label {
+    color: gold;
+}            
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Queries per Feedback */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+    .feedback-container {
+        width: 90%; /* Shtrirja e plotë për ekrane më të vogla */
+        padding: 15px; /* Zvogëlim i padding për pajisje mobile */
+    }
+
+    #rating label {
+        font-size: 24px; /* Redukto madhësinë e yjeve në pajisje më të vogla */
+    }
+
+    .feedback-container textarea {
+        height: 80px; /* Zvogëlo lartësinë për tekst në ekrane të vogla */
+    }
+}
+
+@media (max-width: 480px) {
+    .feedback-container h2 {
+        font-size: 20px; /* Teksti i titullit të zvogëlohet */
+    }
+
+    .feedback-container input,
+    .feedback-container textarea,
+    .feedback-container .feedback-btn {
+        font-size: 14px; /* Teksti i input dhe butonit zvogëlohet */
+        padding: 8px; /* Zvogëlo padding për më shumë hapësirë */
+    }
+
+    .feedback-container .feedback-btn {
+        width: 100%; /* Butoni shtrihet plotësisht */
+    }
+}
+

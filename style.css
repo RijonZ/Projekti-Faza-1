@@ -1407,33 +1407,33 @@ button a {
 
 @media (max-width: 768px) {
     .feedback-container {
-        width: 90%; /* Shtrirja e plotë për ekrane më të vogla */
-        padding: 15px; /* Zvogëlim i padding për pajisje mobile */
+        width: 90%; 
+        padding: 15px; 
     }
 
     #rating label {
-        font-size: 24px; /* Redukto madhësinë e yjeve në pajisje më të vogla */
+        font-size: 24px; 
     }
 
     .feedback-container textarea {
-        height: 80px; /* Zvogëlo lartësinë për tekst në ekrane të vogla */
+        height: 80px; 
     }
 }
 
 @media (max-width: 480px) {
     .feedback-container h2 {
-        font-size: 20px; /* Teksti i titullit të zvogëlohet */
+        font-size: 20px; 
     }
 
     .feedback-container input,
     .feedback-container textarea,
     .feedback-container .feedback-btn {
-        font-size: 14px; /* Teksti i input dhe butonit zvogëlohet */
-        padding: 8px; /* Zvogëlo padding për më shumë hapësirë */
+        font-size: 14px; 
+        padding: 8px; 
     }
 
     .feedback-container .feedback-btn {
-        width: 100%; /* Butoni shtrihet plotësisht */
+        width: 100%; 
     }
 }
 

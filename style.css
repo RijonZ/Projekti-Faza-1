@@ -1577,3 +1577,39 @@ button a {
         width: 16px;
     }
 }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Cart */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+  
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+  
+#total-amount {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+  
+.remove-button {
+    background-color: #ff4d4d; /* Red color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+.remove-button:hover {
+    background-color: black;
+}

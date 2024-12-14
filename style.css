@@ -74,6 +74,58 @@ nav ul.hidden li {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.menu-button {
+    display: none; /* Fillimisht e fshehur */
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    padding-top: 25px;
+}
+
+.menu-button:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
 a{
     text-decoration: none; 
     color: #ffffff;
